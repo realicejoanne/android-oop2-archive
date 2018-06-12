@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trianne.currencyconverter.MainActivity">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="166dp"
+        android:text="Convert from:"
+        android:fontFamily="@font/tabby_bold"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="223dp" />
+
+    <Button
+        android:id="@+id/buttonRp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/header"
+        android:layout_centerVertical="true"
+        android:onClick="onRp"
+        android:text="RP"
+        android:textSize="20sp"
+        android:fontFamily="@font/tabby_light" />
+
+    <Button
+        android:id="@+id/buttonUSD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/header"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/tabby_light"
+        android:onClick="onUSD"
+        android:text="USD"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonYen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonRp"
+        android:layout_below="@+id/buttonRp"
+        android:fontFamily="@font/tabby_light"
+        android:onClick="onYen"
+        android:text="Yen"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/buttonEuro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/buttonUSD"
+        android:layout_below="@+id/buttonUSD"
+        android:fontFamily="@font/tabby_light"
+        android:onClick="onEuro"
+        android:text="Euro"
+        android:textSize="20sp" />
+
+</RelativeLayout>

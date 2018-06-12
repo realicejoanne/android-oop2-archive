@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.trianne.currencyconverter.Main2Activity">
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/tabby_light"
+        android:onClick="onBtnBack"
+        android:text="Back" />
+
+    <TextView
+        android:id="@+id/currency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp"
+        android:fontFamily="@font/tabby_bold"
+        android:gravity="start"
+        android:text="Input the currency value:"
+        android:textAlignment="viewStart"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/currency"
+        android:layout_centerVertical="true"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/input"
+        android:layout_toEndOf="@+id/input"
+        android:fontFamily="@font/tabby_light"
+        android:text="Submit" />
+
+    <LinearLayout
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="101dp"
+        android:gravity="start"
+        android:orientation="vertical"
+        android:textAlignment="textStart">
+
+        <TextView
+            android:id="@+id/rp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:fontFamily="@font/tabby_light"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/usd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tabby_light"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/yen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tabby_light"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/euro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/tabby_light"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
